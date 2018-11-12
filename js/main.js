@@ -7,3 +7,4 @@ $("#input-pokemon-type").on('change', function() {
 });
 
 
+
