@@ -47,7 +47,6 @@
           <option value="electric">Electric</option>
           <option value="fire">Fire</option>
           <option value="water">Water</option>
-          <option value="ground">Ground</option>
           <option value="normal">Normal</option>
           <option value="poison">Poison</option>
           <option value="psychic">Psychic</option>
@@ -56,8 +55,8 @@
           <option value="dragon">Dragon</option>
         </select>
 
-        <label for="input-pokemon-type">Pokemon Weakness</label><br>
-        <select id="input-pokemon-type" name="input-pokemon-type" class="input-pokemon-type">
+        <label for="input-weakness-type">Pokemon Weakness</label><br>
+        <select id="input-weakness-type" name="input-weakness-type" class="input-weakness-type">
           <option value="all">All</option> 
           <option value="electric">Electric</option>
           <option value="fire">Fire</option>
@@ -69,6 +68,12 @@
           <option value="fairy">Fairy</option>
           <option value="flying">Flying</option>
           <option value="dragon">Dragon</option>
+        </select>
+
+        <label for="input-fly-type">Flies</label><br>
+        <select id="input-fly-type" name="input-fly-type" class="input-fly-type">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
         </select>
       </div>
       </div>
@@ -96,7 +101,7 @@
     <div class="container">  
     </div>
     {{#each names}}
-    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 text-center card-hide {{class}}">
+    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 text-center card-hide {{flies}} {{class}} {{wclass}}">
         <div class="card text-center mx-auto" style="width: 17rem;">
           <img class="card-img-top card-img-1" src="img/{{image}}" alt="Card image cap">
           <div class="card-body">
@@ -105,7 +110,7 @@
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item {{class}}-bg">Type: {{type}} {{{emojiType}}}</li>
-            <li class="list-group-item">Weakness: {{weakness}} {{{emojiWeakness}}}</li>
+            <li class="list-group-item weakness">Weakness: {{weakness}} {{{emojiWeakness}}}</li>
             {{#if flying}}
             <li class="list-group-item">Flies: {{{flying}}}</li>
             {{/if}}
