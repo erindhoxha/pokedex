@@ -1,4 +1,5 @@
 
+
 $("#input-pokemon-type").on('change', function () {
     doFiltering();
 });
@@ -10,6 +11,7 @@ $("#input-weakness-type").on('change', function () {
 $("#input-fly-type").on('change', function () {
     doFiltering();
 });
+
 
 function doFiltering() {
     var selectedType = $("#input-pokemon-type").val();
@@ -27,7 +29,8 @@ function doFiltering() {
     }
     if (selectedFly == "yes") {
         selector += '.' + selectedFly;
+    } else {
+        selector += '.' + selectedFly;
     }
     $(selector).show(100);
 }
-

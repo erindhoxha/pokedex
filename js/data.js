@@ -10,7 +10,8 @@ var pokemons = {
             image:"charizard.png",
             flying: "<i style='color:green' class='fas fa-check-square'></i>",
             class: "type flying fire",
-            flies: "yes"
+            flies: "yes",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself"
           },
           {
             name: "Charmelleon",
@@ -21,7 +22,9 @@ var pokemons = {
             wclass: "weakness weakness-water weakness-ground weakness-rock",
             evolvesFrom:"Charmander",
             evolvesTo:"Charizard",
-            image: "charmelleon.png"
+            flies: "no",
+            image: "charmelleon.png",
+            description: "Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself"
           },
           {
           name: "Charmander",
@@ -32,8 +35,7 @@ var pokemons = {
           weakness: "Water, Ground, Rock",
           evolvesTo:"Charmeleon",
           image: "charmander.png",
-          flying: "Yes",
-          flies: "yes"
+          flies: "no"
           }, 
           {
             name: "Bulbasaur",
@@ -42,6 +44,7 @@ var pokemons = {
             ability:"Overgrow",
             weakness: "Psychic, Ice, Flying, Fire",
             wclass: "weakness weakness-psychic weakness-ice weakness-flying weakness-fire",
+            flies: "no",
             evolvesTo:"Ivysaur",
             image: "bulbasaur.png"
           }, {
@@ -53,7 +56,7 @@ var pokemons = {
             weakness: "Electric, Grass",
             image: "blastoise.png",
             evolvesFrom:"Wartortle",
-            flying: "Yes"
+            flies: "no"
           }, {
             name: "Celebi",
             type: "Psychic, Grass",
@@ -62,6 +65,7 @@ var pokemons = {
             ability:"Natural Cure",
             weakness: "Dark, Bug, Ice, Poison, Flying, Fire, Ghost",
             flying: "<i style='color:green' class='fas fa-check-square'></i>",
+            flies: "no",
             image: "celebi.png"
           },{
             name: "Dragonite",
@@ -72,7 +76,7 @@ var pokemons = {
             weakness: "Rock, Ice, Dragon, Fairy",
             evolesFrom:"Dragonair",
             image: "dragonite.png",
-            flying: "<i style='color:green' class='fas fa-check-square'></i>",
+            flies: "yes",
           },{
             name: "Eevee",
             type: "Normal",
@@ -82,6 +86,7 @@ var pokemons = {
             emojiType: "<i class='fas fa-fire'></i>",
             weakness: "Fighting",
             evolvesTo:"Espeon, Umbreon, Sylveon, Vaporeon, Flareon, Jolteon, Leafeon, Glaceon",
+            flies: "no",
             image: "eevee.png"
           },{
             name: "Pichu",
@@ -90,6 +95,7 @@ var pokemons = {
             wclass: "weakness weakness-ground",
             ability:"Static",
             weakness: "Ground",
+            flies: "no",
             image: "pichu.png",
             evolvesTo:"Pikachu"
           },{
@@ -99,6 +105,7 @@ var pokemons = {
             class: "type normal",
             ability:"Limber",
             abilityHidden:"Imposter",
+            flies: "no",
             weakness: "Fighting",
             image: "ditto.png"
           },{
@@ -108,6 +115,7 @@ var pokemons = {
             class: "type poison ghost",
             abiliy:"Cursed Body, Levitate",
             weakness: "Psychic, Dark, Ghost",
+            flies: "no",
             image: "gengar.png",
             evolesFrom:"Haunter"
           },
@@ -118,6 +126,7 @@ var pokemons = {
             wclass: "weakness weakness-electric weakness-grass",
             ability:"Swift Swim",
             weakness: "Electric, Grass",
+            flies: "no",
             evolvesTo:"Gyarados",
             image: "magikarp.png"
           },
@@ -128,6 +137,7 @@ var pokemons = {
             wclass: "weakness weakness-poison weakness-steel",
             ability:"Cute Charm, Competitive",
             weakness: "Poison, Steel",
+            flies: "no",
             evolvesFrom:"Igglybuff",
             evolvesTo:"Wigglytuff",
             image: "jigglypuff.png"
@@ -137,6 +147,7 @@ var pokemons = {
             type: "Psychic",
             class: "type psychic",
             wclass: "weakness weakness-dark weakness-bug weakness-ghost",
+            flies: "no",
             abiliy:"Synchronize",
             weakness: "Dark, Bug, Ghost",
             image: "mew.png"
@@ -156,6 +167,7 @@ var pokemons = {
             class: "type electric",
             wclass: "weakness weakness-ground",
             ability:"Static",
+            flies: "no",
             weakness: "Ground",
             image: "raichu.png",
             evolesFrom:"Pikachu"
@@ -166,6 +178,7 @@ var pokemons = {
             wclass: "weakness weakness-ground",
             class: "type electric",
             ability:"Static",
+            flies: "no",
             weakness: "Ground",
             image: "pikachu.png",
             evolesFrom:"Pichu"
@@ -176,6 +189,7 @@ var pokemons = {
             wclass: "weakness weakness-fighting",
             class: "type normal",
             ability:"Thick Fat, Immunity",
+            flies: "no",
             weakness: "Fighting",
             image: "snorlax.png",
             evolesFrom:"Munchlax"
@@ -187,6 +201,7 @@ var pokemons = {
             class: "type normal",
             ability:"Shell Armor, Water Absorb",
             weakness: "Electric, Rock, Grass, Fighting",
+            flies: "no",
             image: "lapras.png",
           },  
           {
@@ -194,6 +209,7 @@ var pokemons = {
             type: "Water, Flying",
             class: "type normal",
             wclass: "weakness weakness-eletric weakness-rock",
+            flies: "no",
             ability:"Intimidate",
             weakness: "Electric, Rock",
             image: "gyarados.png",
@@ -201,3 +217,5 @@ var pokemons = {
           },
         ]
       };
+
+

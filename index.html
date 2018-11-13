@@ -78,6 +78,42 @@
       </div>
       </div>
       </div>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title name" id="exampleModalLabel">Name</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img class="mb-4" src="" id="img-modal" alt="Img Modal">
+        <p id="description"></p>
+        <p id="weaknesses">Weaknesses:</p>
+        <div class="badge-div">
+          <span class="badge badge-Fire badge-pill badge-primary">Primary</span>
+          <span class="badge badge-Water badge-pill badge-secondary">Secondary</span>
+          <span class="badge badge-Poison badge-pill badge-success">Success</span>
+          <span class="badge badge-Ground badge-pill badge-danger">Danger</span>
+          <span class="badge badge-Dragon badge-pill badge-warning">Warning</span>
+          <span class="badge badge-Psychic badge-pill badge-info">Info</span>
+          <span class="badge badge-Electric badge-pill badge-light">Light</span>
+          <span class="badge badge-Dark badge-pill badge-dark">Dark</span>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
       <div class="col-lg-9 main-menu text-center" style="background-image:url('img/bg.png');">
@@ -94,14 +130,14 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/bootstrap.js"></script>
-  <script src="js/main.js"></script>
   <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
 
   <script id="summative-template" type="text/x-handlebars-template">
     <div class="container">  
     </div>
     {{#each names}}
-    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 text-center card-hide {{flies}} {{class}} {{wclass}}">
+    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 text-center card-hide {{flies}} {{class}} {{wclass}}" data-toggle="modal" data-target="#exampleModal">
         <div class="card text-center mx-auto" style="width: 17rem;">
           <img class="card-img-top card-img-1" src="img/{{image}}" alt="Card image cap">
           <div class="card-body">
@@ -110,7 +146,7 @@
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item {{class}}-bg">Type: {{type}} {{{emojiType}}}</li>
-            <li class="list-group-item weakness">Weakness: {{weakness}} {{{emojiWeakness}}}</li>
+            <li class="list-group-item weakness">Weakness: {{weakness}}{{{emojiWeakness}}}</li>
             {{#if flying}}
             <li class="list-group-item">Flies: {{{flying}}}</li>
             {{/if}}
@@ -134,6 +170,30 @@
 
     var dataTemplate = template(pokemons);
     var templateWrite = document.getElementById('target').innerHTML += dataTemplate;
+
+
+$(".card").on('click', function() {
+    var src = $(this).find('.card-img-top').attr('src');
+    var weakness = $(this).find('.weakness').text()
+    $("#weaknesses").text(weakness);
+        var weaknessNames = weakness.slice(10);
+        weaknessNames = weaknessNames.split(',');
+        console.log(weaknessNames.length);
+    for (var i = 0; i < pokemons.names.length; i++) {
+          pokemons.names[i].image == src;
+        if ('img/' + pokemons.names[i].image == src)
+          var name = pokemons.names[i].name;
+        $(".modal-title").text(name);
+        $("#img-modal").attr('src', src);
+        $("#description").text(pokemons.names[i].description);
+      }
+
+        for (var i = 0; i < weaknessNames.length; i++) {
+           $(".badge-div").append('<span class=badge badge-pill badge-primary badge-'  + weaknessNames[i] + '>' + weaknessNames[i] + '</span>');
+        }
+});
+
+
   </script>
 
   
