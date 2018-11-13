@@ -6,7 +6,7 @@ var pokemons = {
             weakness: "Electric, Water, Rock",
             wclass: "weakness weakness-electric weakness-water weakness-rock",
             ability: "Blaze",
-            evolvesFrom: "Charmeleon",
+            evolvesFrom: "Charmelleon",
             image:"charizard.png",
             flying: "<i style='color:green' class='fas fa-check-square'></i>",
             class: "type flying fire",
@@ -33,7 +33,7 @@ var pokemons = {
           wclass: "weakness weakness-water weakness-ground weakness-rock",
           ability:"Blaze",
           weakness: "Water, Ground, Rock",
-          evolvesTo:"Charmeleon",
+          evolvesTo:"Charmelleon",
           image: "charmander.png",
           flies: "no"
           }, 

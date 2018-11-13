@@ -71,7 +71,8 @@
         </select>
 
         <label for="input-fly-type">Flies</label><br>
-        <select id="input-fly-type" name="input-fly-type" class="input-fly-type">
+        <select id="input-fly-type" name="input-fly-type" value="default" class="input-fly-type">
+            <option value="default">Default</option>
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>
@@ -82,7 +83,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-nr="">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -93,19 +94,30 @@
       </div>
       <div class="modal-body text-center">
         <img class="mb-4" src="" id="img-modal" alt="Img Modal">
-        <p id="description"></p>
-        <p id="weaknesses">Weaknesses:</p>
-        <div class="badge-div">
-          <span class="badge badge-Fire badge-pill badge-primary">Primary</span>
-          <span class="badge badge-Water badge-pill badge-secondary">Secondary</span>
-          <span class="badge badge-Poison badge-pill badge-success">Success</span>
-          <span class="badge badge-Ground badge-pill badge-danger">Danger</span>
-          <span class="badge badge-Dragon badge-pill badge-warning">Warning</span>
-          <span class="badge badge-Psychic badge-pill badge-info">Info</span>
-          <span class="badge badge-Electric badge-pill badge-light">Light</span>
-          <span class="badge badge-Dark badge-pill badge-dark">Dark</span>
+        <div class="badge-type-div">
+          <p>Type:</p>
         </div>
+        <p id="description" class="mt-4"></p>
+        <div class="badge-div">
+          <p>Weaknesses:</p>
+        </div>
+        <div class="evolution-div mt-4">
+          <div class="row">
+          <div class="evolvesFrom col-6">
+            Evolves from:<br>
+            <img class="evolves-from-img" src="#">
+          </div>
+          <div class="evolvesTo col-6">
+            Evolves to:<br>
+            <img class="evolves-to-img" src="#">
+          </div>
 
+          <div class="pokemon-card-div col-6">
+              Cards:<br>
+              <img class="pokemon-card-img" src="#">
+            </div>
+        </div>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn" data-dismiss="modal">Close</button>
@@ -137,7 +149,7 @@
     <div class="container">  
     </div>
     {{#each names}}
-    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 text-center card-hide {{flies}} {{class}} {{wclass}}" data-toggle="modal" data-target="#exampleModal">
+    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 text-center card-hide {{flies}} {{class}} {{wclass}}" data-toggle="modal" data-target="#exampleModal" data-nr="{{@index}}">
         <div class="card text-center mx-auto" style="width: 17rem;">
           <img class="card-img-top card-img-1" src="img/{{image}}" alt="Card image cap">
           <div class="card-body">
@@ -145,16 +157,16 @@
             <!-- <p class="card-text">Sup the bulk of the card's content.</p> -->
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item {{class}}-bg">Type: {{type}} {{{emojiType}}}</li>
+            <li class="list-group-item {{class}}-bg">Type: {{type}}</li>
             <li class="list-group-item weakness">Weakness: {{weakness}}{{{emojiWeakness}}}</li>
             {{#if flying}}
             <li class="list-group-item">Flies: {{{flying}}}</li>
             {{/if}}
             {{#if evolvesFrom}}
-            <li class="list-group-item">Evolves from: {{evolvesFrom}}</li>
+            <li class="list-group-item evolves-from">Evolves from: {{evolvesFrom}}</li>
             {{/if}}
             {{#if evolvesTo}}
-            <li class="list-group-item">Evolves to: {{evolvesTo}}</li>
+            <li class="list-group-item evolves-to">Evolves to: {{evolvesTo}}</li>
             {{/if}}
           </ul>
         </div>
@@ -173,12 +185,12 @@
 
 
 $(".card").on('click', function() {
+    $(".badge").hide();
+    $(".evolvesFrom").show();
+    $(".evolvesTo").show();
+    var dataNr = $(this).closest('.card-hide').attr('data-nr');
+    $("#exampleModal").attr('data-nr', dataNr);
     var src = $(this).find('.card-img-top').attr('src');
-    var weakness = $(this).find('.weakness').text()
-    $("#weaknesses").text(weakness);
-        var weaknessNames = weakness.slice(10);
-        weaknessNames = weaknessNames.split(',');
-        console.log(weaknessNames.length);
     for (var i = 0; i < pokemons.names.length; i++) {
           pokemons.names[i].image == src;
         if ('img/' + pokemons.names[i].image == src)
@@ -187,9 +199,36 @@ $(".card").on('click', function() {
         $("#img-modal").attr('src', src);
         $("#description").text(pokemons.names[i].description);
       }
-
+        var weakness = $(this).find('.weakness').text()
+        $("#weaknesses").text(weakness);
+        var weaknessNames = weakness.slice(10);
+        weaknessNames = weaknessNames.split(', ');
         for (var i = 0; i < weaknessNames.length; i++) {
-           $(".badge-div").append('<span class=badge badge-pill badge-primary badge-'  + weaknessNames[i] + '>' + weaknessNames[i] + '</span>');
+           $(".badge-div").append('<span class="badge badge-pill mr-1 ml-1 badge-' + weaknessNames[i] + '">' + weaknessNames[i] + '</span>');
+        }
+
+        var typeNames = $(this).find('.type').text()
+        var typeNames = typeNames.slice(6);
+        typeNames = typeNames.split(', ');
+        for (var i = 0; i < typeNames.length; i++) {
+           $(".badge-type-div").append('<span class="badge badge-pill mr-1 ml-1 badge-' + typeNames[i] + '">' + typeNames[i] + '</span>');
+        }
+
+        var evolutionFrom = $(this).find('.evolves-from').text()
+        var evolutionFrom = evolutionFrom.slice(14).toLowerCase();
+        console.log(evolutionFrom);
+        $(".evolves-from-img").attr('src',  'img/' + evolutionFrom + '.png');
+        
+        var evolutionTo = $(this).find('.evolves-to').text()
+        var evolutionTo = evolutionTo.slice(12).toLowerCase();
+        $(".evolves-to-img").attr('src',  'img/' + evolutionTo + '.png');
+
+
+        if ($(".evolves-to-img").attr('src') == "img/.png") {
+          $(".evolvesTo").hide();
+        }
+        if ($(".evolves-from-img").attr('src') == "img/.png") {
+          $(".evolvesFrom").hide();
         }
 });
 

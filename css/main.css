@@ -22,8 +22,7 @@ html {
     color:white;
     border-radius:0px !important;
 }
-.Electric-bg {
-}
+
 body {
     font-family:'Montserrat';
 }
@@ -109,7 +108,73 @@ body {
     background: #b3d4fc;
     text-shadow: none;
 }
-
+.badge-Dragon {
+    background-color:red;
+    color:white;
+}
+.badge-Ice {
+    background-color:#76B0B0;
+    color:white;
+}
+.badge-Fire {
+    background-color:#AA3939;
+    color:white;
+}
+.badge-Electric {
+    background-color:#F6D23C;
+    color:white;
+}
+.badge-Rock {
+    background-color:#333;
+    color:white;
+}
+.evolves-from-img, .evolves-to-img {
+    width:100px;
+}
+.badge-Ground {
+    background-color:brown;
+    color:white;
+}
+.badge-Water {
+    background-color:#097CCE;
+    color:white;
+}
+.badge-Fighting {
+    background-color:grey;
+    color:white;
+}
+.badge-Grass {
+    background-color:green;
+    color:white;
+}
+.badge-Psychic {
+    background-color:purple;
+    color:white;
+}
+.badge-Dark {
+    background-color:#333;
+    color:white;
+}
+.badge-Ghost {
+    background-color:#ebebeb;
+    color:black;
+}
+.badge-Poison {
+    background-color:pink;
+    color:white;
+}
+.badge-Steel {
+    background-color:lightgray;
+    color:white;
+}
+.badge-Bug {
+    background-color:sandybrown;
+    color:white;
+}
+.badge-Flying {
+    background-color:gainsboro;
+    color:white;
+}
 ::selection {
     background: #b3d4fc;
     text-shadow: none;

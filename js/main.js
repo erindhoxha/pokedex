@@ -29,8 +29,9 @@ function doFiltering() {
     }
     if (selectedFly == "yes") {
         selector += '.' + selectedFly;
-    } else {
+    } else if (selectedFly == "no"){
         selector += '.' + selectedFly;
     }
     $(selector).show(100);
+
 }
