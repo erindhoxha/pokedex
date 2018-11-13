@@ -6,7 +6,7 @@ var pokemons = {
             weakness: "Electric, Water, Rock",
             ability: "Blaze",
             evolvesFrom: "Charmeleon",
-            image:"charizard.jpeg",
+            image:"charizard.png",
             flying: "<i style='color:green' class='fas fa-check-square'></i>",
             class: "flying fire"
           },
@@ -18,7 +18,7 @@ var pokemons = {
             weakness: "Water, Ground, Rock",
             evolvesFrom:"Charmander",
             evolvesTo:"Charizard",
-            image: "charmelleon.jpeg"
+            image: "charmelleon.png"
           },
           {
           name: "Charmander",
@@ -27,7 +27,7 @@ var pokemons = {
           ability:"Blaze",
           weakness: "Water, Ground, Rock",
           evolvesTo:"Charmeleon",
-          image: "charmander.jpeg",
+          image: "charmander.png",
           flying: "Yes"
           }, 
           {
@@ -37,14 +37,14 @@ var pokemons = {
             ability:"Overgrow",
             weakness: "Psychic, Ice, Flying, Fire",
             evolvesTo:"Ivysaur",
-            image: "bulbsaur.jpeg"
+            image: "bulbasaur.png"
           }, {
             name: "Blastoise",
             type: "Water",
             class: "water",
             ability:"Torrent",
             weakness: "Electric, Grass",
-            image: "blastoise.jpeg",
+            image: "blastoise.png",
             evolvesFrom:"Wartortle",
             flying: "Yes"
           }, {
@@ -54,7 +54,7 @@ var pokemons = {
             ability:"Natural Cure",
             weakness: "Dark, Bug, Ice, Poison, Flying, Fire, Ghost",
             flying: "<i style='color:green' class='fas fa-check-square'></i>",
-            image: "celebi.jpeg"
+            image: "celebi.png"
           },{
             name: "Dragonite",
             type: "Flying, Dragon",
@@ -62,7 +62,7 @@ var pokemons = {
             ability:"Inner Focus",
             weakness: "Rock, Ice, Dragon, Fairy",
             evolesFrom:"Dragonair",
-            image: "dragonite.jpeg",
+            image: "dragonite.png",
             flying: "<i style='color:green' class='fas fa-check-square'></i>",
           },{
             name: "Eevee",
@@ -72,14 +72,14 @@ var pokemons = {
             emojiType: "<i class='fas fa-fire'></i>",
             weakness: "Fighting",
             evolvesTo:"Espeon, Umbreon, Sylveon, Vaporeon, Flareon, Jolteon, Leafeon, Glaceon",
-            image: "eevee.jpeg"
+            image: "eevee.png"
           },{
             name: "Pichu",
             type: "Electric",
             class: "electric",
             ability:"Static",
             weakness: "Ground",
-            image: "pichu.jpeg",
+            image: "pichu.png",
             evolvesTo:"Pikachu"
           },{
             name: "Ditto",
@@ -88,14 +88,14 @@ var pokemons = {
             ability:"Limber",
             abilityHidden:"Imposter",
             weakness: "Fighting",
-            image: "ditto.jpeg"
+            image: "ditto.png"
           },{
             name: "Gengar",
             type: "Poison, Ghost",
             class: "poison ghost",
             abiliy:"Cursed Body, Levitate",
             weakness: "Psychic, Dark, Ghost",
-            image: "gengar.jpeg",
+            image: "gengar.png",
             evolesFrom:"Haunter"
           },
           {
@@ -105,7 +105,7 @@ var pokemons = {
             ability:"Swift Swim",
             weakness: "Electric, Grass",
             evolvesTo:"Gyarados",
-            image: "magikarp.jpeg"
+            image: "magikarp.png"
           },
           {
             name: "Jigglypuff",
@@ -115,7 +115,7 @@ var pokemons = {
             weakness: "Poison, Steel",
             evolvesFrom:"Igglybuff",
             evolvesTo:"Wigglytuff",
-            image: "jigglypuff.jpeg"
+            image: "jigglypuff.png"
           },
           {
             name: "Mew",
@@ -123,7 +123,7 @@ var pokemons = {
             class: "psychic",
             abiliy:"Synchronize",
             weakness: "Dark, Bug, Ghost",
-            image: "mew.jpeg"
+            image: "mew.png"
           },
           {
             name: "Mewtwo",
@@ -131,7 +131,7 @@ var pokemons = {
             class: "psychic",
             ability:"Pressure",
             weakness: "Dark, Bug, Ghost",
-            image: "mewtwo.jpeg"
+            image: "mewtwo.png"
           },
           {
             name: "Raichu",
@@ -139,8 +139,43 @@ var pokemons = {
             class: "electric",
             ability:"Static",
             weakness: "Ground",
-            image: "raichu.jpeg",
+            image: "raichu.png",
             evolesFrom:"Pikachu"
+          }, 
+          {
+            name: "Pikachu",
+            type: "Electric",
+            class: "electric",
+            ability:"Static",
+            weakness: "Ground",
+            image: "pikachu.png",
+            evolesFrom:"Pichu"
+          },  
+          {
+            name: "Snorlax",
+            type: "Normal",
+            class: "normal",
+            ability:"Thick Fat, Immunity",
+            weakness: "Fighting",
+            image: "snorlax.png",
+            evolesFrom:"Munchlax"
+          },        
+          {
+            name: "Lapras",
+            type: "Water, Ice",
+            class: "normal",
+            ability:"Shell Armor, Water Absorb",
+            weakness: "Electric, Rock, Grass, Fighting",
+            image: "lapras.png",
+          },  
+          {
+            name: "Gyarados",
+            type: "Water, Flying",
+            class: "normal",
+            ability:"Intimidate",
+            weakness: "Electric, Rock",
+            image: "gyarados.png",
+            evolvesFrom: "Magikarp"
           },
         ]
       };

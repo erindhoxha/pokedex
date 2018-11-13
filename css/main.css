@@ -127,7 +127,7 @@ hr {
 }
 /* Pokemon type */
 
-#input-pokemon-type {
+#input-pokemon-type, #input-weakness-type {
     width:100%;
     height:30px;
     font-size:15px;

@@ -7,4 +7,10 @@ $("#input-pokemon-type").on('change', function() {
 });
 
 
+$("#input-weakness-type").on('change', function() {
+    var value = $(this).val();
 
+    $(".weakness:contains('" + value + "')").each(function() {
+        console.log(this);
+    })
+});
