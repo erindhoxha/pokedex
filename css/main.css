@@ -56,10 +56,10 @@ body {
 }
 .horizontal {
   display: flex;
-  height: 100vh;
+  height: 101vh;
   justify-content: center;
   align-items: center;
-    background-color:rgba(208, 35, 35, 0.79);
+    background-color:rgba(208, 35, 35, 0.77);
 }
 #logoImg {
     width:150px;
