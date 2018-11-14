@@ -14,16 +14,25 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/magic.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/handlebars-v4.0.12.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
 
 <body>
+<div class="horizontal">
+<img src="img/pokemon-logo.png" class="fa-spin" id="logoImg">
+</div>
+  
   <!-- <ul class="nav">
     <img id="logo" src="img/logo.png">
   </ul> -->
-  <div class="container-fluid">
+  <div class="container-fluid" style="display:none">
     
     <div class="row">
       <div class="col-lg-12 top-nav">
@@ -117,29 +126,55 @@
             </button>
           </div>
           <div class="modal-body text-center">
-            <img class="mb-4" src="" id="img-modal" alt="Img Modal">
-            <div class="badge-type-div">
+            <img class="mb-4 pulse animated" src="" id="img-modal" alt="Img Modal">
+            <div class="badge-type-div pulse animated">
               <p>Type:</p>
             </div>
-            <p id="description" class="mt-4 {{name}}"></p>
-            <div class="badge-div">
+            <p id="description" class="mt-4"></p>
+            <div class="badge-div pulse animated">
               <p>Weaknesses:</p>
             </div>
             <div class="evolution-div mt-4">
               <div class="row">
-                <div class="evolvesFrom col-6">
+                <div class="evolvesFrom col-6 pulse animated">
                   Evolves from:<br>
                   <img class="evolves-from-img" src="#">
                 </div>
-                <div class="evolvesTo col-6">
+                <div class="evolvesTo col-6 pulse animated">
                   Evolves to:<br>
                   <img class="evolves-to-img" src="#">
                 </div>
-    
-                <div class="pokemon-card-div col-6">
-                  Card:<br>
-                  <img class="pokemon-card-img" src="#">
+              </div>
+
+              <div class="row stats mt-5">
+                <div class="weight col-6 pulse animated">
+                  Weight:<br>
                 </div>
+                <div class="height col-6 pulse animated">
+                  Height:<br>
+                </div>
+
+                <div class="weight col-6 pulse animated mt-4">
+                  Category:<br>
+                </div>
+                <div class="height col-6 pulse animated mt-4">
+                  Abilities:<br>
+                </div>
+
+                <div class="height col-12 pulse animated mt-4">
+                  Gender:<br>
+                </div>
+
+                  <div class="pokemon-card-div col-6 pulse animated">
+                    Card:<br>
+                    <img class="pokemon-card-img" src="#">
+                  </div>
+
+                  <div class="pokemon-card-div col-6 pulse animated">
+                    Card:<br>
+                    <img class="pokemon-card-img" src="#">
+                  </div>
+                  
               </div>
             </div>
           </div>

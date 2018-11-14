@@ -54,9 +54,25 @@ body {
     text-align:center;
     color:white;
 }
+.horizontal {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+    background-color:rgba(208, 35, 35, 0.79);
+}
+#logoImg {
+    width:150px;
+}
 .form {
     width:80%;
     margin:0 auto;
+}
+#description {
+    padding-top:20px;
+    border-top:1px solid #ebebeb;
+    border-bottom:1px solid #ebebeb;
+    padding-bottom:20px;
 }
 .sidebar {
     background-color:rgba(208, 35, 35, 0.79);
@@ -124,6 +140,7 @@ body {
     background-color:#F6D23C;
     color:white;
 }
+
 .badge-Rock {
     background-color:#333;
     color:white;

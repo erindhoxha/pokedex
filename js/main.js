@@ -1,3 +1,15 @@
+        $('.container-fluid').hide();
+
+$(function () {
+    setTimeout(function () {
+        $('#logoImg').fadeOut(1000);
+        $('.horizontal').fadeOut();
+        $('.container-fluid').fadeIn();
+    }, 2000);
+});
+
+
+$(document).ready(function () {
 
 
 $("#input-pokemon-type").on('change', function () {
@@ -37,23 +49,27 @@ function doFiltering() {
 }
 
 
-
 $(".card").on('click', function () {
     $(".badge").hide();
     $(".evolvesFrom").show();
     $(".evolvesTo").show();
+
+    
     var dataNr = $(this).closest('.card-hide').attr('data-nr');
     $("#exampleModal").attr('data-nr', dataNr);
-    var src = $(this).find('.card-img-top').attr('src');
-    
-    for (var i = 0; i < pokemons.names.length; i++) {
-        pokemons.names[i].image == src;
-        if ('img/' + pokemons.names[i].image == src)
-            var name = pokemons.names[i].name;
+    console.log(dataNr);
+    console.log('img/' + pokemons.names[dataNr].image);
+
+        var src = 'img/' + pokemons.names[dataNr].image;
+        var name = pokemons.names[dataNr].name;
         $(".modal-title").text(name);
         $("#img-modal").attr('src', src);
-        $("#description").text(pokemons.names[i].description);
-    }
+
+        var description = pokemons.names[dataNr].description;
+        $("#description").text(description);
+
+
+        console.log(src);
     var weakness = $(this).find('.weakness').text()
     $("#weaknesses").text(weakness);
     var weaknessNames = weakness.slice(10);
@@ -86,6 +102,10 @@ $(".card").on('click', function () {
         $(".evolvesFrom").hide();
     }
     if ($(".pokemon-card-img").attr('src') == "#") {
-        $(".pokemon-card-img").hide();
+        $(".pokemon-card-div").hide();
     }
+
+});
+
+    //your code here
 });
