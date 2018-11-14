@@ -232,13 +232,25 @@ hr {
     /* color:#ebebeb; */
 }
 
+/* HIDE ON MOBILE OVERFLOW SCROLL */
+.main-menu {
+    overflow:scroll;
+    height:122vh;
+}
+
 #input-search-pokemon {
-    width:70%;
+    width:65%;
     float:left;
 }
 #input-search-button {
     float:left;
-    width:30%;
+    width:33%;
+    border-radius:5px;
+    margin-left:2%;
+    height:30px;
+    background-color:transparent;
+    color:white;
+    
 }
 label {
     margin-top:20px;

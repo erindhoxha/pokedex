@@ -6,7 +6,7 @@ var pokemons = {
             weakness: "Electric, Water, Rock",
             wclass: "weakness weakness-electric weakness-water weakness-rock",
             ability: "Blaze",
-            evolvesFrom: "Charmelleon",
+            evolvesFrom: "Charmeleon",
             image:"charizard.png",
             flying: "<i style='color:green' class='fas fa-check-square'></i>",
             class: "type flying fire",
@@ -15,10 +15,11 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/charizard_card_1.png", "img/charizard_card_2.png", "img/charizard_card_3.png"]
           },
           {
-            name: "Charmelleon",
+            name: "Charmeleon",
             type: "Fire",
             class: "type fire",
             ability:"Blaze",
@@ -27,12 +28,13 @@ var pokemons = {
             evolvesFrom:"Charmander",
             evolvesTo:"Charizard",
             flies: "no",
-            image: "charmelleon.png",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
+            image: "charmeleon.png",
+            description:"Charmeleon mercilessly destroys its foes using its sharp claws. If it encounters a strong foe, it turns aggressive. In this excited state, the flame at the tip of its tail flares with a bluish white color",
+            height: "3' 07\"",
+            weight: "41.9 lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/charmeleon_card_1.png", "img/charmeleon_card_2.png", "img/charmeleon_card_3.png"]
           },
           {
           name: "Charmander",
@@ -41,14 +43,15 @@ var pokemons = {
           wclass: "weakness weakness-water weakness-ground weakness-rock",
           ability:"Blaze",
           weakness: "Water, Ground, Rock",
-          evolvesTo:"Charmelleon",
+          evolvesTo:"Charmeleon",
           image: "charmander.png",
           flies: "no",
-          description: "Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-          height: "5' 07\"",
-          weight: "199.5lbs",
-          category: "Flame",
-          gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+          description: "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.",
+          height: "2' 00\"",
+          weight: "18.7lbs",
+          category: "Lizard",
+          gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+          cardsImages:["img/charmander_card_1.png", "img/charmander_card_2.png", "img/charmander_card_3.png"]
           }, 
           {
             name: "Bulbasaur",
@@ -60,11 +63,12 @@ var pokemons = {
             flies: "no",
             evolvesTo:"Ivysaur",
             image: "bulbasaur.png",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            description:"Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
+            height: "2' 04\"",
+            weight: "15.2 lbs",
+            category: "Seed",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/bulbasaur_card_1.png", "img/bulbasaur_card_2.png", "img/bulbasaur_card_3.png"]
           }, {
             name: "Blastoise",
             type: "Water",
@@ -79,7 +83,8 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           }, {
             name: "Celebi",
             type: "Psychic, Grass",
@@ -94,7 +99,8 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           },{
             name: "Dragonite",
             type: "Flying, Dragon",
@@ -109,7 +115,8 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           },{
             name: "Eevee",
             type: "Normal",
@@ -125,7 +132,8 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           },{
             name: "Pichu",
             type: "Electric",
@@ -140,7 +148,8 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           },{
             name: "Ditto",
             type: "Normal",
@@ -155,7 +164,8 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           },{
             name: "Gengar",
             type: "Poison, Ghost",
@@ -170,7 +180,8 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           },
           {
             name: "Magikarp",
@@ -186,7 +197,8 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           },
           {
             name: "Jigglypuff",
@@ -218,7 +230,8 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           },
           {
             name: "Mewtwo",
@@ -232,7 +245,8 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           },
           {
             name: "Raichu",
@@ -248,7 +262,8 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           }, 
           {
             name: "Pikachu",
@@ -264,7 +279,8 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           },  
           {
             name: "Snorlax",
@@ -295,7 +311,8 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           },  
           {
             name: "Gyarados",
@@ -311,7 +328,8 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           },
         ]
       };

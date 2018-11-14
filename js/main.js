@@ -1,16 +1,13 @@
-//         $('.container-fluid').hide();
-
-// $(function () {
-//     setTimeout(function () {
-//         $('#logoImg').fadeOut(1000);
-//         $('.horizontal').fadeOut();
-//         $('.container-fluid').fadeIn();
-//     }, 2000);
-// });
-
 
 $(document).ready(function () {
 
+    $(function () {
+        setTimeout(function () {
+            $('#logoImg').fadeOut(1000);
+            $('.horizontal').fadeOut();
+            $('.container-fluid').fadeIn();
+        }, 2000);
+    });
 
 $("#input-pokemon-type").on('change', function () {
     doFiltering();
@@ -50,6 +47,7 @@ function doFiltering() {
 
 
 $(".card").on('click', function () {
+
     $(".badge").hide();
     $(".evolvesFrom").show();
     $(".evolvesTo").show();
@@ -57,8 +55,6 @@ $(".card").on('click', function () {
     
     var dataNr = $(this).closest('.card-hide').attr('data-nr');
     $("#exampleModal").attr('data-nr', dataNr);
-    console.log(dataNr);
-    console.log('img/' + pokemons.names[dataNr].image);
 
         var src = 'img/' + pokemons.names[dataNr].image;
         var name = pokemons.names[dataNr].name;
@@ -69,7 +65,6 @@ $(".card").on('click', function () {
         $("#description").text(description);
 
 
-        console.log(src);
     var weakness = $(this).find('.weakness').text()
     $("#weaknesses").text(weakness);
     var weaknessNames = weakness.slice(10);
@@ -87,7 +82,6 @@ $(".card").on('click', function () {
 
     var evolutionFrom = $(this).find('.evolves-from').text()
     var evolutionFrom = evolutionFrom.slice(14).toLowerCase();
-    console.log(evolutionFrom);
     $(".evolves-from-img").attr('src', 'img/' + evolutionFrom + '.png');
 
     var evolutionTo = $(this).find('.evolves-to').text()
@@ -119,6 +113,7 @@ $(".card").on('click', function () {
     $("#abilities-text").text(ability);
 
     var gender = selector.gender;
+    $(".gender-box").children().remove();
     $(".gender-box").append(gender);
     
     var evolvesTo = selector.evolvesTo;
@@ -127,18 +122,22 @@ $(".card").on('click', function () {
     var evolvesFrom = selector.evolvesFrom;
     $("#pokemon-evolves-from-name").text(evolvesFrom);
 
+
+    var cardImages = selector.cardsImages;
+    console.log(cardImages);
+    for (i = 0; i < cardImages.length; i++) {
+        $(".carousel-image-pokemon_" + i).attr('src', cardImages[i]);
+    }
 });
 
 
     $("#input-search-pokemon").on('keyup', function(){
-        var searchValue = $("#input-search-pokemon").val();
+        var searchValue = $("#input-search-pokemon").val().toLowerCase().replace(/\s/g, '');
         var cardTitle = $(".card-title");
-
+        $(".card-hide").hide();
         for (var i = 0; i < cardTitle.length; i++ ) {
-            if (searchValue == cardTitle[i].innerHTML || searchValue.includes(cardTitle[i].innerHTML.toLowerCase())) {
+            if (cardTitle[i].innerHTML.toLowerCase().indexOf(searchValue) > -1) {
                 var nameOfPokemon = cardTitle[i].innerHTML;
-
-                $(".card-hide").hide();
                 $('h4:contains("' + nameOfPokemon + '")').closest('.card-hide').show();
             }
         }
