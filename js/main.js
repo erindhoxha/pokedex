@@ -1,12 +1,12 @@
-        $('.container-fluid').hide();
+//         $('.container-fluid').hide();
 
-$(function () {
-    setTimeout(function () {
-        $('#logoImg').fadeOut(1000);
-        $('.horizontal').fadeOut();
-        $('.container-fluid').fadeIn();
-    }, 2000);
-});
+// $(function () {
+//     setTimeout(function () {
+//         $('#logoImg').fadeOut(1000);
+//         $('.horizontal').fadeOut();
+//         $('.container-fluid').fadeIn();
+//     }, 2000);
+// });
 
 
 $(document).ready(function () {
@@ -104,8 +104,58 @@ $(".card").on('click', function () {
     if ($(".pokemon-card-img").attr('src') == "#") {
         $(".pokemon-card-div").hide();
     }
+    var selector = pokemons.names[dataNr];
+
+    var weight = selector.weight;
+    $("#weight-text").text(weight);
+
+    var height = selector.height;
+    $("#height-text").text(height);
+
+    var category = selector.category;
+    $("#category-text").text(category);
+
+    var ability = selector.ability;
+    $("#abilities-text").text(ability);
+
+    var gender = selector.gender;
+    $(".gender-box").append(gender);
+    
+    var evolvesTo = selector.evolvesTo;
+    $("#pokemon-evolves-to-name").text(evolvesTo);
+
+    var evolvesFrom = selector.evolvesFrom;
+    $("#pokemon-evolves-from-name").text(evolvesFrom);
 
 });
+
+
+    $("#input-search-pokemon").on('keyup', function(){
+        var searchValue = $("#input-search-pokemon").val();
+        var cardTitle = $(".card-title");
+
+        for (var i = 0; i < cardTitle.length; i++ ) {
+            if (searchValue == cardTitle[i].innerHTML || searchValue.includes(cardTitle[i].innerHTML.toLowerCase())) {
+                var nameOfPokemon = cardTitle[i].innerHTML;
+
+                $(".card-hide").hide();
+                $('h4:contains("' + nameOfPokemon + '")').closest('.card-hide').show();
+            }
+        }
+        if (searchValue.includes("ALL".toLowerCase())) {
+            $(".card-hide").show();
+        }
+    })
+
+    var input = document.getElementById('input-search-pokemon');
+
+    input.addEventListener('keyup', function(event) {
+        event.preventDefault();
+
+        if (event.keyCode === 13) {
+            document.getElementById('input-search-button').click();
+        }
+    })
 
     //your code here
 });

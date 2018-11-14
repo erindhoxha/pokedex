@@ -11,7 +11,11 @@ var pokemons = {
             flying: "<i style='color:green' class='fas fa-check-square'></i>",
             class: "type flying fire",
             flies: "yes",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself"
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },
           {
             name: "Charmelleon",
@@ -24,7 +28,11 @@ var pokemons = {
             evolvesTo:"Charizard",
             flies: "no",
             image: "charmelleon.png",
-            description: "Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself"
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },
           {
           name: "Charmander",
@@ -35,7 +43,12 @@ var pokemons = {
           weakness: "Water, Ground, Rock",
           evolvesTo:"Charmelleon",
           image: "charmander.png",
-          flies: "no"
+          flies: "no",
+          description: "Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+          height: "5' 07\"",
+          weight: "199.5lbs",
+          category: "Flame",
+          gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           }, 
           {
             name: "Bulbasaur",
@@ -46,7 +59,12 @@ var pokemons = {
             wclass: "weakness weakness-psychic weakness-ice weakness-flying weakness-fire",
             flies: "no",
             evolvesTo:"Ivysaur",
-            image: "bulbasaur.png"
+            image: "bulbasaur.png",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           }, {
             name: "Blastoise",
             type: "Water",
@@ -56,7 +74,12 @@ var pokemons = {
             weakness: "Electric, Grass",
             image: "blastoise.png",
             evolvesFrom:"Wartortle",
-            flies: "no"
+            flies: "no",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           }, {
             name: "Celebi",
             type: "Psychic, Grass",
@@ -66,7 +89,12 @@ var pokemons = {
             weakness: "Dark, Bug, Ice, Poison, Flying, Fire, Ghost",
             flying: "<i style='color:green' class='fas fa-check-square'></i>",
             flies: "no",
-            image: "celebi.png"
+            image: "celebi.png",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },{
             name: "Dragonite",
             type: "Flying, Dragon",
@@ -77,6 +105,11 @@ var pokemons = {
             evolesFrom:"Dragonair",
             image: "dragonite.png",
             flies: "yes",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },{
             name: "Eevee",
             type: "Normal",
@@ -87,7 +120,12 @@ var pokemons = {
             weakness: "Fighting",
             evolvesTo:"Espeon, Umbreon, Sylveon, Vaporeon, Flareon, Jolteon, Leafeon, Glaceon",
             flies: "no",
-            image: "eevee.png"
+            image: "eevee.png",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },{
             name: "Pichu",
             type: "Electric",
@@ -97,7 +135,12 @@ var pokemons = {
             weakness: "Ground",
             flies: "no",
             image: "pichu.png",
-            evolvesTo:"Pikachu"
+            evolvesTo:"Pikachu",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },{
             name: "Ditto",
             type: "Normal",
@@ -107,7 +150,12 @@ var pokemons = {
             abilityHidden:"Imposter",
             flies: "no",
             weakness: "Fighting",
-            image: "ditto.png"
+            image: "ditto.png",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },{
             name: "Gengar",
             type: "Poison, Ghost",
@@ -117,7 +165,12 @@ var pokemons = {
             weakness: "Psychic, Dark, Ghost",
             flies: "no",
             image: "gengar.png",
-            evolesFrom:"Haunter"
+            evolesFrom:"Haunter",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },
           {
             name: "Magikarp",
@@ -128,7 +181,12 @@ var pokemons = {
             weakness: "Electric, Grass",
             flies: "no",
             evolvesTo:"Gyarados",
-            image: "magikarp.png"
+            image: "magikarp.png",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },
           {
             name: "Jigglypuff",
@@ -140,7 +198,12 @@ var pokemons = {
             flies: "no",
             evolvesFrom:"Igglybuff",
             evolvesTo:"Wigglytuff",
-            image: "jigglypuff.png"
+            image: "jigglypuff.png",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },
           {
             name: "Mew",
@@ -150,7 +213,12 @@ var pokemons = {
             flies: "no",
             abiliy:"Synchronize",
             weakness: "Dark, Bug, Ghost",
-            image: "mew.png"
+            image: "mew.png",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },
           {
             name: "Mewtwo",
@@ -159,7 +227,12 @@ var pokemons = {
             wclass: "weakness weakness-dark weakness-bug weakness-ghost",
             ability:"Pressure",
             weakness: "Dark, Bug, Ghost",
-            image: "mewtwo.png"
+            image: "mewtwo.png",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },
           {
             name: "Raichu",
@@ -170,7 +243,12 @@ var pokemons = {
             flies: "no",
             weakness: "Ground",
             image: "raichu.png",
-            evolesFrom:"Pikachu"
+            evolesFrom:"Pikachu",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           }, 
           {
             name: "Pikachu",
@@ -181,7 +259,12 @@ var pokemons = {
             flies: "no",
             weakness: "Ground",
             image: "pikachu.png",
-            evolesFrom:"Pichu"
+            evolesFrom:"Pichu",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },  
           {
             name: "Snorlax",
@@ -192,7 +275,12 @@ var pokemons = {
             flies: "no",
             weakness: "Fighting",
             image: "snorlax.png",
-            evolesFrom:"Munchlax"
+            evolesFrom:"Munchlax",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },        
           {
             name: "Lapras",
@@ -203,6 +291,11 @@ var pokemons = {
             weakness: "Electric, Rock, Grass, Fighting",
             flies: "no",
             image: "lapras.png",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },  
           {
             name: "Gyarados",
@@ -213,7 +306,12 @@ var pokemons = {
             ability:"Intimidate",
             weakness: "Electric, Rock",
             image: "gyarados.png",
-            evolvesFrom: "Magikarp"
+            evolvesFrom: "Magikarp",
+            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
+            height: "5' 07\"",
+            weight: "199.5lbs",
+            category: "Flame",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
           },
         ]
       };

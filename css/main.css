@@ -110,6 +110,14 @@ body {
 #img-modal {
     max-height:300px;
 }
+.stats {
+    padding:30px;
+    color:white;
+    font-weight:600;
+    background-color:#2b9cd1;
+    border-radius:20px;
+    margin:10px;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -222,6 +230,15 @@ hr {
     background-color:rgba(255, 255, 255, 0.9);
     /* background-color:#333; */
     /* color:#ebebeb; */
+}
+
+#input-search-pokemon {
+    width:70%;
+    float:left;
+}
+#input-search-button {
+    float:left;
+    width:30%;
 }
 label {
     margin-top:20px;

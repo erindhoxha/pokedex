@@ -25,14 +25,14 @@
 
 
 <body>
-<div class="horizontal">
+<!-- <div class="horizontal">
 <img src="img/pokemon-logo.png" class="fa-spin" id="logoImg">
 </div>
-  
+   -->
   <!-- <ul class="nav">
     <img id="logo" src="img/logo.png">
   </ul> -->
-  <div class="container-fluid" style="display:none">
+  <div class="container-fluid" > <!--style="display:none"-->
     
     <div class="row">
       <div class="col-lg-12 top-nav">
@@ -49,6 +49,11 @@
         <h3>Gotta catch em all!</h3>
         </div>
         <div class="form">
+        <br>
+        <label for="input-search-pokemon">Find your Pokemon!</label><br>
+        <input id="input-search-pokemon" type="text">
+        <button id="input-search-button">Search</button>
+
         <br>
         <label for="input-pokemon-type">Pokemon Type</label><br>
         <select id="input-pokemon-type" name="input-pokemon-type" class="input-pokemon-type">
@@ -130,39 +135,50 @@
             <div class="badge-type-div pulse animated">
               <p>Type:</p>
             </div>
+
             <p id="description" class="mt-4"></p>
             <div class="badge-div pulse animated">
               <p>Weaknesses:</p>
+
             </div>
             <div class="evolution-div mt-4">
               <div class="row">
-                <div class="evolvesFrom col-6 pulse animated">
+                <div class="evolvesFrom col-6 pulse animated mb-2">
                   Evolves from:<br>
-                  <img class="evolves-from-img" src="#">
+                  <img class="evolves-from-img mt-2" src="#">
+                  <p id="pokemon-evolves-from-name" class="mt-2"></p>
                 </div>
-                <div class="evolvesTo col-6 pulse animated">
+                <div class="evolvesTo col-6 pulse animated mb-2">
                   Evolves to:<br>
-                  <img class="evolves-to-img" src="#">
+                  <img class="evolves-to-img mt-2" src="#">
+                  <p id="pokemon-evolves-to-name" class="mt-2"></p>
                 </div>
               </div>
 
-              <div class="row stats mt-5">
+              <div class="row stats mt-3">
                 <div class="weight col-6 pulse animated">
                   Weight:<br>
+                  <p id="weight-text"></p>
                 </div>
                 <div class="height col-6 pulse animated">
                   Height:<br>
+                  <p id="height-text"></p>
                 </div>
 
                 <div class="weight col-6 pulse animated mt-4">
                   Category:<br>
+                  <p id="category-text"></p>
                 </div>
                 <div class="height col-6 pulse animated mt-4">
                   Abilities:<br>
+                  <p id="abilities-text"></p>
                 </div>
 
                 <div class="height col-12 pulse animated mt-4">
                   Gender:<br>
+                  <div class="gender-box">
+
+                  </div>
                 </div>
 
                   <div class="pokemon-card-div col-6 pulse animated">
