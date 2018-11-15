@@ -79,10 +79,10 @@ var pokemons = {
             image: "blastoise.png",
             evolvesFrom:"Wartortle",
             flies: "no",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
+            description:"Blastoise has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets of water with enough accuracy to strike empty cans from a distance of over 160 feet.",
+            height: "5' 03\"",
+            weight: "188.5lbs",
+            category: "Shellfish",
             gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
             cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           }, {
@@ -95,12 +95,12 @@ var pokemons = {
             flying: "<i style='color:green' class='fas fa-check-square'></i>",
             flies: "no",
             image: "celebi.png",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
+            description:"This Pokémon came from the future by crossing over time. It is thought that so long as Celebi appears, a bright and shining future awaits us.",
+            height: "2' 07\"",
+            weight: "11.0lbs",
+            category: "Time Travelcle",
             gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
-            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
+            cardsImages:["img/celebi_card_1.png", "img/celebi_card_2.png", "img/celebi_card_3.png"]
           },{
             name: "Dragonite",
             type: "Flying, Dragon",
@@ -111,12 +111,12 @@ var pokemons = {
             evolesFrom:"Dragonair",
             image: "dragonite.png",
             flies: "yes",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
+            description:"Dragonite is capable of circling the globe in just 16 hours. It is a kindhearted Pokémon that leads lost and foundering ships in a storm to the safety of land.",
+            height: "7' 03\"",
+            weight: "483.0lbs",
+            category: "Dragon",
             gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
-            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
+            cardsImages:["img/dragonite_card_1.png", "img/dragonite_card_2.png", "img/dragonite_card_3.png"]
           },{
             name: "Eevee",
             type: "Normal",
@@ -128,12 +128,12 @@ var pokemons = {
             evolvesTo:"Espeon, Umbreon, Sylveon, Vaporeon, Flareon, Jolteon, Leafeon, Glaceon",
             flies: "no",
             image: "eevee.png",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
+            description:"Eevee has an unstable genetic makeup that suddenly mutates due to the environment in which it lives. Radiation from various stones causes this Pokémon to evolve",
+            height: "1' 00\"",
+            weight: "14.3 lbs",
+            category: "Evolution",
             gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
-            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
+            cardsImages:["img/eevee_card_1.png", "img/eevee_card_2.png", "img/eevee_card_3.png"]
           },{
             name: "Pichu",
             type: "Electric",
@@ -144,12 +144,12 @@ var pokemons = {
             flies: "no",
             image: "pichu.png",
             evolvesTo:"Pikachu",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
+            description:"Pichu charges itself with electricity more easily on days with thunderclouds or when the air is very dry. You can hear the crackling of static electricity coming off this Pokémon.",
+            height: "1' 00\"",
+            weight: "4.4 lbs",
+            category: "Tiny Mouse",
             gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
-            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
+            cardsImages:["img/pichu_card_1.png", "img/pichu_card_2.png", "img/pichu_card_3.png"]
           },{
             name: "Ditto",
             type: "Normal",
@@ -160,12 +160,12 @@ var pokemons = {
             flies: "no",
             weakness: "Fighting",
             image: "ditto.png",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
-            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
+            description:"Ditto rearranges its cell structure to transform itself into other shapes. However, if it tries to transform itself into something by relying on its memory, this Pokémon manages to get details wrong.",
+            height: "1' 00\"",
+            weight: "8.8 lbs",
+            category: "Transform",
+            gender: 'Unknown',
+            cardsImages:["img/ditto_card_1.png", "img/ditto_card_2.png", "img/ditto_card_3.png"]
           },{
             name: "Gengar",
             type: "Poison, Ghost",
@@ -176,12 +176,12 @@ var pokemons = {
             flies: "no",
             image: "gengar.png",
             evolesFrom:"Haunter",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
+            description:"Sometimes, on a dark night, your shadow thrown by a streetlight will suddenly and startlingly overtake you. It is actually a Gengar running past you, pretending to be your shadow.",
+            height: "4' 11\"",
+            weight: "89.5 lbs",
+            category: "Shadow",
             gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
-            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
+            cardsImages:["img/gengar_card_1.png", "img/gengar_card_2.png", "img/gengar_card_3.png"]
           },
           {
             name: "Magikarp",
@@ -193,12 +193,12 @@ var pokemons = {
             flies: "no",
             evolvesTo:"Gyarados",
             image: "magikarp.png",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
+            description:"Magikarp is a pathetic excuse for a Pokémon that is only capable of flopping and splashing. This behavior prompted scientists to undertake research into it.",
+            height: "2' 11\"",
+            weight: "22.0 lbs",
+            category: "Fish",
             gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
-            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
+            cardsImages:["img/magikarp_card_1.png", "img/magikarp_card_2.png", "img/magikarp_card_3.png"]
           },
           {
             name: "Jigglypuff",
@@ -211,11 +211,12 @@ var pokemons = {
             evolvesFrom:"Igglybuff",
             evolvesTo:"Wigglytuff",
             image: "jigglypuff.png",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            description:"Jigglypuff's vocal cords can freely adjust the wavelength of its voice. This Pokémon uses this ability to sing at precisely the right wavelength to make its foes most drowsy.",
+            height: "1' 08\"",
+            weight: "12.1 lbs",
+            category: "Balloon",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/jigglypuff_card_1.png", "img/jigglypuff_card_2.png", "img/jigglypuff_card_3.png"]
           },
           {
             name: "Mew",
@@ -226,12 +227,12 @@ var pokemons = {
             abiliy:"Synchronize",
             weakness: "Dark, Bug, Ghost",
             image: "mew.png",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
-            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
+            description:"Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people.",
+            height: "1' 04\"",
+            weight: "8.8 lbs",
+            category: "New Species",
+            gender: 'Unknown',
+            cardsImages:["img/mew_card_1.png", "img/mew_card_2.png", "img/mew_card_3.png"]
           },
           {
             name: "Mewtwo",
@@ -241,12 +242,12 @@ var pokemons = {
             ability:"Pressure",
             weakness: "Dark, Bug, Ghost",
             image: "mewtwo.png",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
-            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
+            description:"Mewtwo is a Pokémon that was created by genetic manipulation. However, even though the scientific power of humans created this Pokémon's body, they failed to endow Mewtwo with a compassionate heart.",
+            height: "6' 07\"",
+            weight: "269.0 lbs",
+            category: "Genetic",
+            gender: 'Unknown',
+            cardsImages:["img/mewtwo_card_1.png", "img/mewtwo_card_2.png", "img/mewtwo_card_3.png"]
           },
           {
             name: "Raichu",
@@ -258,12 +259,12 @@ var pokemons = {
             weakness: "Ground",
             image: "raichu.png",
             evolesFrom:"Pikachu",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
+            description:"If the electrical sacs become excessively charged, Raichu plants its tail in the ground and discharges. Scorched patches of ground will be found near this Pokémon's nest.",
+            height: "2' 07\"",
+            weight: "66.1 lbs",
+            category: "Mouse",
             gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
-            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
+            cardsImages:["img/raichu_card_1.png", "img/raichu_card_2.png", "img/raichu_card_3.png"]
           }, 
           {
             name: "Pikachu",
@@ -275,12 +276,12 @@ var pokemons = {
             weakness: "Ground",
             image: "pikachu.png",
             evolesFrom:"Pichu",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
+            description:"Whenever Pikachu comes across something new, it blasts it with a jolt of electricity. If you come across a blackened berry, it's evidence that this Pokémon mistook the intensity of its charge.",
+            height: "1' 04\"",
+            weight: "13.2 lbs",
+            category: "Mouse",
             gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
-            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
+            cardsImages:["img/pikachu_card_1.png", "img/pikachu_card_2.png", "img/pikachu_card_3.png"]
           },  
           {
             name: "Snorlax",
@@ -292,11 +293,12 @@ var pokemons = {
             weakness: "Fighting",
             image: "snorlax.png",
             evolesFrom:"Munchlax",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>'
+            description:"Snorlax's typical day consists of nothing more than eating and sleeping. It is such a docile Pokémon that there are children who use its expansive belly as a place to play.",
+            height: "6' 11\"",
+            weight: "1014.0 lbs",
+            category: "Sleeping",
+            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            cardsImages:["img/snorlax_card_1.png", "img/snorlax_card_2.png", "img/snorlax_card_3.png"]
           },        
           {
             name: "Lapras",
@@ -307,12 +309,12 @@ var pokemons = {
             weakness: "Electric, Rock, Grass, Fighting",
             flies: "no",
             image: "lapras.png",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
+            description:"People have driven Lapras almost to the point of extinction. In the evenings, this Pokémon is said to sing plaintively as it seeks what few others of its kind still remain.",
+            height: "8' 02\"",
+            weight: "485.0 lbs",
+            category: "Transport",
             gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
-            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
+            cardsImages:["img/lapras_card_1.png", "img/lapras_card_2.png", "img/lapras_card_3.png"]
           },  
           {
             name: "Gyarados",
@@ -324,12 +326,12 @@ var pokemons = {
             weakness: "Electric, Rock",
             image: "gyarados.png",
             evolvesFrom: "Magikarp",
-            description:"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself",
-            height: "5' 07\"",
-            weight: "199.5lbs",
-            category: "Flame",
+            description:"When Magikarp evolves into Gyarados, its brain cells undergo a structural transformation. It is said that this transformation is to blame for this Pokémon's wildly violent nature.",
+            height: "21' 04\"",
+            weight: "518.1 lbs",
+            category: "Atrocious",
             gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
-            cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
+            cardsImages:["img/gyarados_card_1.png", "img/gyarados_card_2.png", "img/gyarados_card_3.png"]
           },
         ]
       };

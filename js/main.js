@@ -6,7 +6,7 @@ $(document).ready(function () {
             $('#logoImg').fadeOut(1000);
             $('.horizontal').fadeOut();
             $('.container-fluid').fadeIn();
-        }, 0);
+        }, 2000);
     });
 
 $("#input-pokemon-type").on('change', function () {
@@ -152,9 +152,6 @@ $(".card").on('click', function () {
                 var nameOfPokemon = cardTitle[i].innerHTML;
                 $('h4:contains("' + nameOfPokemon + '")').closest('.card-hide').show();
             }
-        }
-        if (searchValue.includes("ALL".toLowerCase())) {
-            $(".card-hide").show();
         }
     })
 

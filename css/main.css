@@ -22,6 +22,12 @@ html {
     color:white;
     border-radius:0px !important;
 }
+#btn-luck {
+    height:60px;
+    background-color:white;
+    color:black;
+    font-size:30px;
+}
 
 body {
     font-family:'Montserrat';
@@ -81,7 +87,7 @@ body {
 }
 .sidebar-overlay {
     padding:0;
-    background-image:url('https://i.imgur.com/6R0Q1DU.jpg');
+    background-image:url('../img/bg.jpg');
     /* background-image:url('https://images.pexels.com/photos/921776/pexels-photo-921776.jpeg?cs=srgb&dl=texture-wall-abstract-921776.jpg&fm=jpg'); */
 }
 .main-menu {
