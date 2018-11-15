@@ -446,6 +446,17 @@ textarea {
     #logo {
         margin-top:20px;
     }
+    .main-menu {
+        overflow:unset;
+    }
+    .sidebar {
+        height: 100%;
+        padding: 50px;
+        margin-bottom:50px;
+    }
+    .card-hide {
+        margin-top:60px !important;
+    }
     /* Style adjustments for viewports that meet the condition */
 }
 @media print,

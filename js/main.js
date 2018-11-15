@@ -115,8 +115,13 @@ $(".card").on('click', function () {
     $("#abilities-text").text(ability);
 
     var gender = selector.gender;
+    $(".gender-box").text("");
     $(".gender-box").children().remove();
     $(".gender-box").append(gender);
+    if ($(".gender-box").text().trim() == "M/F") {
+    $(".gender-box").text("");
+    $(".gender-box").append('<i class="fas fa-mars gender-male" style="font-size: 30px;"></i> <i class="fas fa-venus gender-female" style="font-size: 30px;"></i>')
+    }
     
     var evolvesTo = selector.evolvesTo;
     $("#pokemon-evolves-to-name").text(evolvesTo);
@@ -139,6 +144,7 @@ $(".card").on('click', function () {
     if ($(".div-evolves-to-" + dataNr).attr('style') == "display: none;") {
         $(".div-evolves-from-" + dataNr).css('margin', '0 auto');
     }
+
 
 });
 

@@ -15,7 +15,7 @@ var pokemons = {
             height: "5' 07\"",
             weight: "199.5lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/charizard_card_1.png", "img/charizard_card_2.png", "img/charizard_card_3.png"]
           },
           {
@@ -33,7 +33,7 @@ var pokemons = {
             height: "3' 07\"",
             weight: "41.9 lbs",
             category: "Flame",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/charmeleon_card_1.png", "img/charmeleon_card_2.png", "img/charmeleon_card_3.png"]
           },
           {
@@ -50,7 +50,7 @@ var pokemons = {
           height: "2' 00\"",
           weight: "18.7lbs",
           category: "Lizard",
-          gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+          gender: 'M/F',
           cardsImages:["img/charmander_card_1.png", "img/charmander_card_2.png", "img/charmander_card_3.png"]
           }, 
           {
@@ -67,7 +67,7 @@ var pokemons = {
             height: "2' 04\"",
             weight: "15.2 lbs",
             category: "Seed",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/bulbasaur_card_1.png", "img/bulbasaur_card_2.png", "img/bulbasaur_card_3.png"]
           }, {
             name: "Blastoise",
@@ -83,7 +83,7 @@ var pokemons = {
             height: "5' 03\"",
             weight: "188.5lbs",
             category: "Shellfish",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/blastoise_card_1.png", "img/blastoise_card_2.png", "img/blastoise_card_3.png"]
           }, {
             name: "Celebi",
@@ -99,7 +99,7 @@ var pokemons = {
             height: "2' 07\"",
             weight: "11.0lbs",
             category: "Time Travelcle",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/celebi_card_1.png", "img/celebi_card_2.png", "img/celebi_card_3.png"]
           },{
             name: "Dragonite",
@@ -115,7 +115,7 @@ var pokemons = {
             height: "7' 03\"",
             weight: "483.0lbs",
             category: "Dragon",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/dragonite_card_1.png", "img/dragonite_card_2.png", "img/dragonite_card_3.png"]
           },{
             name: "Eevee",
@@ -132,7 +132,7 @@ var pokemons = {
             height: "1' 00\"",
             weight: "14.3 lbs",
             category: "Evolution",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/eevee_card_1.png", "img/eevee_card_2.png", "img/eevee_card_3.png"]
           },{
             name: "Pichu",
@@ -148,7 +148,7 @@ var pokemons = {
             height: "1' 00\"",
             weight: "4.4 lbs",
             category: "Tiny Mouse",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/pichu_card_1.png", "img/pichu_card_2.png", "img/pichu_card_3.png"]
           },{
             name: "Ditto",
@@ -180,7 +180,7 @@ var pokemons = {
             height: "4' 11\"",
             weight: "89.5 lbs",
             category: "Shadow",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/gengar_card_1.png", "img/gengar_card_2.png", "img/gengar_card_3.png"]
           },
           {
@@ -197,7 +197,7 @@ var pokemons = {
             height: "2' 11\"",
             weight: "22.0 lbs",
             category: "Fish",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/magikarp_card_1.png", "img/magikarp_card_2.png", "img/magikarp_card_3.png"]
           },
           {
@@ -215,7 +215,7 @@ var pokemons = {
             height: "1' 08\"",
             weight: "12.1 lbs",
             category: "Balloon",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/jigglypuff_card_1.png", "img/jigglypuff_card_2.png", "img/jigglypuff_card_3.png"]
           },
           {
@@ -263,7 +263,7 @@ var pokemons = {
             height: "2' 07\"",
             weight: "66.1 lbs",
             category: "Mouse",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/raichu_card_1.png", "img/raichu_card_2.png", "img/raichu_card_3.png"]
           }, 
           {
@@ -280,7 +280,7 @@ var pokemons = {
             height: "1' 04\"",
             weight: "13.2 lbs",
             category: "Mouse",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/pikachu_card_1.png", "img/pikachu_card_2.png", "img/pikachu_card_3.png"]
           },  
           {
@@ -297,7 +297,7 @@ var pokemons = {
             height: "6' 11\"",
             weight: "1014.0 lbs",
             category: "Sleeping",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/snorlax_card_1.png", "img/snorlax_card_2.png", "img/snorlax_card_3.png"]
           },        
           {
@@ -313,7 +313,7 @@ var pokemons = {
             height: "8' 02\"",
             weight: "485.0 lbs",
             category: "Transport",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/lapras_card_1.png", "img/lapras_card_2.png", "img/lapras_card_3.png"]
           },  
           {
@@ -330,7 +330,7 @@ var pokemons = {
             height: "21' 04\"",
             weight: "518.1 lbs",
             category: "Atrocious",
-            gender: '<i class="fas fa-mars" style="font-size: 30px;"></i> <i class="fas fa-venus" style="font-size: 30px;"></i>',
+            gender: 'M/F',
             cardsImages:["img/gyarados_card_1.png", "img/gyarados_card_2.png", "img/gyarados_card_3.png"]
           },
         ]
