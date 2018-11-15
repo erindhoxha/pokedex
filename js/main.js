@@ -6,7 +6,7 @@ $(document).ready(function () {
             $('#logoImg').fadeOut(1000);
             $('.horizontal').fadeOut();
             $('.container-fluid').fadeIn();
-        }, 2000);
+        }, 0);
     });
 
 $("#input-pokemon-type").on('change', function () {
