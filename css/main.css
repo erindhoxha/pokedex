@@ -136,6 +136,14 @@ body {
     background-color:red;
     color:white;
 }
+.badge-Fairy {
+    background-color:lightgreen;
+    color:white;
+}
+.badge-Normal {
+    background-color:aquamarine;
+    color:white;
+}
 .badge-Ice {
     background-color:#76B0B0;
     color:white;
