@@ -297,7 +297,7 @@ var pokemons = {
             height: "6' 11\"",
             weight: "1014.0 lbs",
             category: "Sleeping",
-            gender: 'M/F',
+            gender: 'M',
             cardsImages:["img/snorlax_card_1.png", "img/snorlax_card_2.png", "img/snorlax_card_3.png"]
           },        
           {
@@ -330,7 +330,7 @@ var pokemons = {
             height: "21' 04\"",
             weight: "518.1 lbs",
             category: "Atrocious",
-            gender: 'M/F',
+            gender: 'M',
             cardsImages:["img/gyarados_card_1.png", "img/gyarados_card_2.png", "img/gyarados_card_3.png"]
           },
         ]

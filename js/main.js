@@ -6,8 +6,9 @@ $(document).ready(function () {
             $('#logoImg').fadeOut(1000);
             $('.horizontal').fadeOut();
             $('.container-fluid').fadeIn();
-        }, 0);
+        }, 2000);
     });
+
 
 $("#input-pokemon-type").on('change', function () {
     doFiltering();
@@ -121,6 +122,12 @@ $(".card").on('click', function () {
     if ($(".gender-box").text().trim() == "M/F") {
     $(".gender-box").text("");
     $(".gender-box").append('<i class="fas fa-mars gender-male" style="font-size: 30px;"></i> <i class="fas fa-venus gender-female" style="font-size: 30px;"></i>')
+    } else if ($(".gender-box").text().trim() == "M") {
+        $(".gender-box").text("");
+        $(".gender-box").append('<i class="fas fa-mars gender-male" style="font-size: 30px;"></i>')
+    } else if ($(".gender-box").text().trim() == "F") {
+        $(".gender-box").text("");
+        $(".gender-box").append('<i class="fas fa-mars gender-female" style="font-size: 30px;"></i>')
     }
     
     var evolvesTo = selector.evolvesTo;
@@ -209,3 +216,16 @@ $(".card").on('click', function () {
     }
     btnLuck.addEventListener('click', getRandomPokemon, false);
 });
+
+$(function() {
+
+    $(".container").niceScroll("div.container", {
+      cursorwidth: "12px"
+    });
+
+    $("a.btn").click(function(e) {
+      e.preventDefault();
+
+    });
+
+  });

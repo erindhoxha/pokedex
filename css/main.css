@@ -16,17 +16,26 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    height:100vh;
 }
+body {
+    height:100vh;
+}
+
 .btn-Fire {
     background-color:#ff5454;
     color:white;
     border-radius:0px !important;
 }
-#btn-luck {
-    height:60px;
-    background-color:white;
-    color:#ff5454;
-    font-size:30px;
+
+.lucky-box-div {
+    text-align:center;
+    margin-top:40px;
+    transition:0.5s ease;
+    cursor:pointer;
+}
+.lucky-box-div:hover {
+    transform:scale(1.1);
 }
 
 body {
@@ -85,9 +94,17 @@ body {
     border-bottom:1px solid #ebebeb;
     padding-bottom:20px;
 }
+.badge-type-div  {
+    padding-top:20px;
+    border-top:1px solid #ebebeb;
+}
+.badge-div {
+    padding-bottom:20px;
+    border-bottom:1px solid #ebebeb;
+}
 .sidebar {
     background-color:rgba(208, 35, 35, 0.79);
-    height:121vh;
+    height:100vh;
     border-right:1px solid #ebebeb;
 }
 .sidebar-overlay {
@@ -259,12 +276,16 @@ hr {
 /* HIDE ON MOBILE OVERFLOW SCROLL */
 .main-menu {
     overflow:scroll;
-    height:122vh;
+    height:100vh;
 }
 
 #input-search-pokemon {
     width:65%;
     float:left;
+    text-indent:5px;
+}
+#btn-luck {
+    width:50%;
 }
 #input-search-button {
     float:left;
@@ -448,6 +469,8 @@ textarea {
     }
     .main-menu {
         overflow:unset;
+        overflow:inherit;
+        overflow:initial;
     }
     .sidebar {
         height: 100%;
@@ -456,6 +479,10 @@ textarea {
     }
     .card-hide {
         margin-top:60px !important;
+        margin-bottom:60px !important;
+    }
+    #btn-luck {
+        width:40%;
     }
     /* Style adjustments for viewports that meet the condition */
 }
